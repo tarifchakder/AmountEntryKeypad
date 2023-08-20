@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <View
+            android:id="@+id/bottom_sheet_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/top_shadow" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bottom_sheet_container"
+            style="@style/AmountCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:background="#12C7E4FB"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="SAR 2057930000.00"
+                    android:textColor="#000B47"
+                    android:textSize="35sp" />
+
+                <View
+                    android:id="@+id/amount_bar_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#59E6E6E6"
+                    android:visibility="visible" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:columnCount="3"
+                    android:minHeight="270dp"
+                    android:rowCount="3">
+
+                    <com.google.android.material.card.MaterialCardView style="@style/CardView.KeyBoard">
+
+                        <TextView
+                            style="@style/TextView.English.KeyBoard"
+                            android:text="1" />
+
+                        <TextView
+                            style="@style/TextView.Arabic.KeyBoard"
+                            android:text="۱" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView style="@style/CardView.KeyBoard">
+
+                        <TextView
+                            style="@style/TextView.English.KeyBoard"
+                            android:text="2" />
+
+                        <TextView
+                            style="@style/TextView.Arabic.KeyBoard"
+                            android:text="۲" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView style="@style/CardView.KeyBoard">
+
+                        <TextView
+                            style="@style/TextView.English.KeyBoard"
+                            android:text="3" />
+
+                        <TextView
+                            style="@style/TextView.Arabic.KeyBoard"
+                            android:text="۳" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView style="@style/CardView.KeyBoard">
+
+                        <TextView
+                            style="@style/TextView.English.KeyBoard"
+                            android:text="4" />
+
+                        <TextView
+                            style="@style/TextView.Arabic.KeyBoard"
+                            android:text="۴" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView style="@style/CardView.KeyBoard">
+
+                        <TextView
+                            style="@style/TextView.English.KeyBoard"
+                            android:text="5" />
+
+                        <TextView
+                            style="@style/TextView.Arabic.KeyBoard"
+                            android:text="۵" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView style="@style/CardView.KeyBoard">
+
+                        <TextView
+                            style="@style/TextView.English.KeyBoard"
+                            android:text="6" />
+
+                        <TextView
+                            style="@style/TextView.Arabic.KeyBoard"
+                            android:text="۶" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView style="@style/CardView.KeyBoard">
+
+                        <TextView
+                            style="@style/TextView.English.KeyBoard"
+                            android:text="7" />
+
+                        <TextView
+                            style="@style/TextView.Arabic.KeyBoard"
+                            android:text="۷" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView style="@style/CardView.KeyBoard">
+
+                        <TextView
+                            style="@style/TextView.English.KeyBoard"
+                            android:text="8" />
+
+                        <TextView
+                            style="@style/TextView.Arabic.KeyBoard"
+                            android:text="۸" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView style="@style/CardView.KeyBoard">
+
+                        <TextView
+                            style="@style/TextView.English.KeyBoard"
+                            android:text="9" />
+
+                        <TextView
+                            style="@style/TextView.Arabic.KeyBoard"
+                            android:text="۹" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        style="@style/CardView.KeyBoard"
+                        app:cardBackgroundColor="#27F44336">
+
+                        <TextView
+                            style="@style/TextView.English.KeyBoard"
+                            android:text="AC"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            style="@style/TextView.Arabic.KeyBoard"
+                            android:text="" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView style="@style/CardView.KeyBoard">
+
+                        <TextView
+                            style="@style/TextView.English.KeyBoard"
+                            android:text="0" />
+
+                        <TextView
+                            style="@style/TextView.Arabic.KeyBoard"
+                            android:text="۰" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        style="@style/CardView.KeyBoard"
+                        app:cardBackgroundColor="#3BF44336">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_delete" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </GridLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btn_okay"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginHorizontal="13dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="#34BD39"
+                    app:cardCornerRadius="15dp">
+
+                    <TextView
+                        android:id="@+id/btn_okay_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="PURCHASE"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</LinearLayout>
